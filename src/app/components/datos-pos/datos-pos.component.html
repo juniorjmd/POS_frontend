@@ -1,0 +1,24 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: transparent !important;">
+        <a class="navbar-brand" [routerLink]="['/home/inicio']">
+            <i class="fas fa-folder-minus"></i>
+        </a>
+        <a class="navbar-brand" [routerLink]="['generales']">
+            <i class="fas fa-house-user"></i>
+        </a>
+        <!-- <a class=" btn btn-outline-primary my-2 my-sm-0" [routerLink]="['caja']">Cajas<span class="sr-only">(current)</span></a>-->
+
+        <a class=" btn btn-outline-primary my-2 my-sm-0" style="margin-left: 10px;" [routerLink]="['cajaNueva']">
+            <i class=" fas fa-cogs  "></i> Caja<span class="sr-only">(current)</span></a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+
+    </nav>
+    <router-outlet></router-outlet>
+</div>
